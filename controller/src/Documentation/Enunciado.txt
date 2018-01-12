@@ -1,0 +1,31 @@
+Gestión de Tablas
+Realizar una clase que gestione un JSON con datos.
+
+El objetivo de la práctica es crear y mostrar una tabla con los datos pasados por el JSON. 
+
+La clase tendrá como datos el "JSON", paginación, el "id" de donde irá la tabla y el "css" de la tabla en class.
+
+Además como mínimo los métodos: Ordenar, Mostrar, Paginar, AsignaEstilo
+
+Utilizar: nodo.classList.add("nombreClase"); Para añadir un estilo asociado a una clase.
+
+Como se indica se creará una tabla con el estilo indicado y en la posición indicada.
+
+El atributo paginación indicará cuantos registros se mostrarán por página. Si debido al atributo de paginación se generaran mas de una página, en la parte inferior de la tabla se mostrará un sistema de navegación entre las diferentes páginas. En el caso de que paginación sea 0, significa que no hay paginación y mostrará todos los registros.
+
+Generar al menos dos hojas de estilo para la tabla.
+
+En cada registro de la tabla debe de poder realizar la gestión de borrar registro o actualizar registro.
+
+Además de un botón de añadir un registro nuevo a través de un formulario.
+
+Debe de tener un método que permita ordenar por uno de los campos.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Para probar que funciona, debe de generar un pequeño formulario en la parte superior con las siguientes funciones:
+
+Paginación: Indicar el número de registros por página. Recuerda si es 0, mostrará todos los registros.
+Estilo: Es para seleccionar la hoja de estilo que queremos utilizar de las dos que hemos generado.
+Campo para ordenar: Indica por que campo queremos ordenar. Si el campo es "Ninguno", no ordenará, lo dejará con el orden que tenga.
+Añadir un botón para añadir mas información.

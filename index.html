@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf8"/>
+	<meta name="descripcion" content="DB personas"/>
+	<meta name="autor" content="Jorge Costa"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="view/styles/css/bootstrap.min.css">
+	<link rel="stylesheet" href="view/styles/css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-default">
+	    <div class="container-fluid">
+	        <ul class="nav navbar-nav">
+		        <form id="formSearch" class="navbar-form navbar-left" action="#" method="POST">
+		        	<label for="order">Orden</label>
+		            <select name="order" id="order" class="form-control">      	
+		            </select>
+		            <label for="pages">Paginacion</label>
+		           	<select name="pages" id="pages" class="form-control">
+	                   	<option value="5">5</option>
+		              	<option value="10">10</option>
+		               	<option value="15">15</option>
+		               	<option value="20">20</option>
+		               	<option value="20">20</option>            
+	                </select>
+		            <label for="style">Estilo</label>
+		            <select name="style" id="style" class="form-control">
+	                   	<option value="table" selected>Sin bordes</option>
+		              	<option value="table-bordered">Con bordes</option>
+		               	<option value="table-hover">Sombreada</option>
+	                </select>
+	            </form>
+	        </ul>
+	        <ul class="nav navbar-nav navbar-right">
+	      		<form id="formSearch" class="navbar-form navbar-left" action="#" method="POST">
+					<button id="mostrar" name="mostrar" type="button" class="btn btn-success form-control">Mostrar</button>
+				</form>	
+	        </ul>
+	    </div>
+	</nav>
+	
+	<div id="mensajes"></div>
+  	<div id="tableContainer" class="container"></div>
+
+	<ul class="pager">
+        <li><a href="#" id="previous">&larr; Previous</a></li>
+        <li class="active"><span id="pageNumber"></span></li>
+        <li><a href="#" id="next">Next &rarr;</a></li>
+    </ul>
+	
+	<footer class="navbar-fixed-bottom footer-bottom container col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	    <div class="container text-center">
+	        <a href="https://github.com/JorgeCostaMacia"> Copyright © Jorge Costa Macia 2017. All right reserved. </a>
+	    </div>
+	</footer>
+
+	<script src="view/tables.js" type="text/javascript"></script>
+	<script src="view/mensajes.js" type="text/javascript"></script>
+	<script src="view/nav.js" type="text/javascript"></script>
+
+	<script src="model/ajaxModel.js" type="text/javascript"></script>
+
+	<script src="controller/controller.js" type="text/javascript"></script>
+	<script src="controller/events.js" type="text/javascript"></script>
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,13 @@
+body{
+  padding: 15px;
+}
+
+.pager {
+	margin-bottom: 100px;
+}
+.footer-bottom {
+	background: #e7e7e7;
+	border-top: 1px solid #DDDDDD;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
